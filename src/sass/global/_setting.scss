@@ -9,14 +9,14 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 
 // フォント
-$font-main: "Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium","Yu Gothic",Meiryo,sans-serif;;
-$font-sub: "Roboto Condensed", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, system-ui;
+$font-main: "Noto Sans JP", sans-serif;
+$font-sub: "Inter", sans-serif;
 
 // 色指定
-$black: #333;
+$red: #B10000;
+$black: #000;
+$blue: #005CB1;
 $white: #fff;
-$red: #E83836;
-$blue: #007bff;
 
 // フォントウェイト
 $font-weights: (
