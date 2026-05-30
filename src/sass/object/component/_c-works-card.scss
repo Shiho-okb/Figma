@@ -41,7 +41,7 @@
 }
 
 .c-works-card__text {
-  margin-top: rem(8);
+  margin-top: rem(11);
   font-size: rem(16);
   line-height: calc(26 / 16);
   letter-spacing: .03em;
@@ -59,9 +59,9 @@
 .c-works-card__tags {
   display: flex;
   gap: rem(13);
-  margin-top: rem(18);
+  margin-top: rem(16);
   @include mq(md) {
-    margin-top: rem(14);
+    margin-top: rem(13);
   }
 }
 
@@ -75,11 +75,12 @@
   font-weight: 700;
   line-height: 1;
   @include mq(md) {
-    width: rem(125);
-    min-height: rem(36);
-    padding: rem(8) rem(18);
-    font-size: rem(14);
+    font-size: rem(12);
   }
+}
+
+.c-works-card__tag--office {
+  width: rem(100);
 }
 
 .c-works-card__tag--black {

@@ -39,8 +39,6 @@
   color: $white;
   background-color: $red;
   @include mq(md) {
-    width: rem(72);
-    height: rem(26);
     font-size: rem(12);
   }
 }
