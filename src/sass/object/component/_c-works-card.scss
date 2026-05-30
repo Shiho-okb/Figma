@@ -99,7 +99,7 @@
 .p-works-cards {
   display: flex;
   gap: rem(23);
-  padding-inline: rem(121);
+  padding-inline: rem(120);
   @include mq(md) {
     max-width: rem(600);
     gap: rem(30);
