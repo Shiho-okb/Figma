@@ -1,7 +1,9 @@
 
 jQuery(function ($) {
 
-  // ページトップボタン
+  /*-------------------------------------------
+  ページトップボタン
+  -------------------------------------------*/
   var topBtn = $('.js-pagetop');
   topBtn.hide();
 
@@ -24,7 +26,10 @@ jQuery(function ($) {
     return false;
   });
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動。ヘッダーの高さ考慮。)
+
+  /*-------------------------------------------
+  スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動。ヘッダーの高さ考慮。)
+  -------------------------------------------*/
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
@@ -33,6 +38,38 @@ jQuery(function ($) {
     let targetY = target.offset().top - header;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
+  });
+
+
+  /*-------------------------------------------
+  ハンバーガーメニュー
+  -------------------------------------------*/
+  $('.js-hamburger').on('click', function (e) {
+    e.stopPropagation();
+    $(this).toggleClass('is-active');
+    $("body").toggleClass("active");
+    $('.js-drawer').fadeToggle();
+
+    checkFadeIn();
+  });
+
+  // ハンバーガーメニュー内リンク
+  let isSp = window.matchMedia('(max-width: 767px)').matches;
+
+  $('.p-header-nav-item__link[href], .p-header-dropmenu__link').on('click', function () {
+    // pc時は処理をしせず終了
+    if (!isSp) return;
+
+    $('.js-hamburger').toggleClass('is-active');
+    $('body').toggleClass('active');
+    $('.js-drawer').fadeToggle();
+
+    checkFadeIn();
+  });
+
+  // リサイズした際に、isSpを更新する
+  window.addEventListener('resize', function () {
+    isSp = window.matchMedia('(max-width: 767px)').matches;
   });
 
 });
