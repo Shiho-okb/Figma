@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-footer {
-  background: $red;
+  background: $black;
   padding-block: rem(110) rem(25);
   text-align: center;
+  @include mq(md) {
+    padding-block: rem(50) rem(25);
+  }
 }
 
 .p-footer__nav-list {
@@ -11,6 +14,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mq(md) {
+    flex-direction: column;
+  }
 }
 
 /* セパレーターの縦線 */
@@ -20,6 +26,9 @@
   width: rem(1);
   height: rem(16);
   background: $white;
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .p-footer__nav-link {
@@ -29,6 +38,12 @@
   letter-spacing: .05em;
   color: $white;
   padding: rem(10) rem(23);
+  @include mq(md) {
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: 500;
+    padding: rem(7) rem(16);
+  }
 }
 
 .p-footer__nav-link:hover {
@@ -41,4 +56,9 @@
   font-size: rem(12);
   font-weight: 700;
   color: $white;
+  @include mq(md) {
+    margin-top: rem(48);
+    font-size: rem(10);
+    font-weight: 500;
+  }
 }
