@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: rem(100);
+  padding-inline: rem(100) rem(73);
   height: rem(100);
-  background: #f5f5f5;
+  background: $white;
   transition: transform .4s;
   @include mq(md) {
     padding-inline: rem(20) rem(12);
@@ -143,6 +143,8 @@
 .p-header__nav-link {
   text-decoration: none;
   font-size: rem(16);
+  font-weight: 600;
+  letter-spacing: .05em;
   color: $black;
   padding-inline: rem(27);
   display: flex;
