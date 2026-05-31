@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-mainvisual {
+  background: $black;
+  overflow: hidden;
+  margin-top: rem(100);
+  padding-block: rem(80) rem(230);
+  @include mq(md) {
+    margin-top: 0;
+    padding-block: rem(56) rem(161);
+  }
+}
+
+.swiper .swiper-slide {
+  width: rem(904);
+  overflow: hidden;
+  @include mq(md) {
+    width: rem(243);
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 904/500;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 243/136;
+  }
+}

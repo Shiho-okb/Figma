@@ -72,4 +72,26 @@ jQuery(function ($) {
     isSp = window.matchMedia('(max-width: 767px)').matches;
   });
 
+
+  /*-------------------------------------------
+  スワイパー
+  -------------------------------------------*/
+  const swiper = new Swiper(".swiper", {
+    loop: true, // ループ
+    speed: 1500, // 少しゆっくり(デフォルトは300)
+    slidesPerView: 1.5, // 一度に表示する枚数
+    spaceBetween: 20, // スライド間の距離
+    centeredSlides: true, // アクティブなスライドを中央にする
+    // autoplay: {
+    //   delay: 1000,
+    // },
+
+    // レスポンシブ設定
+    breakpoints: {
+      768: {
+        spaceBetween: 48,
+      },
+    },
+  });
+
 });

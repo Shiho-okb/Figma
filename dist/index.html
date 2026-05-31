@@ -27,19 +27,123 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <!-- ヘッダー -->
+  <header class="p-header l-header">
+    <a href="#" class="p-header__logo">CODO ASSIST</a>
+    <button class="p-header__hamburger js-hamburger" aria-label="ハンバーガーボタン">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="p-header__nav js-drawer">
+      <ul class="p-header__nav-list">
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link p-header__nav-link--active">ホーム</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link">お知らせ</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link">施工事例</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link">我々について</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link">採用情報</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="#" class="p-header__nav-link">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインエリア -->
+  <main>
+    <!-- メインビジュアル -->
+    <section class="p-mainvisual">
+      <div class="swiper p-mainvisual__swiper">
+        <div class="swiper-wrapper">
+          <!-- スライド１ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_01PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド２ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_02PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド３ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_03PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド４ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_04PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド５ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_05PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド６ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_06PC.jpg" alt="" width="904" height="500">
+          </div>
+          <!-- スライド７ -->
+          <div class="swiper-slide p-mainvisual__slide">
+            <img src="./images/mv/mv_07PC.jpg" alt="" width="904" height="500">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <div class="l-inner">
     <p class="p-test">サイトが表示されました!</p>
     <div class="p-test__img">
-      <img src="./images/dummy1.webp" alt="サンプル画像" width="3600" height="2400" loading="lazy" decoding="async">
+      <img src="./images/dummy1.webp" alt="サンプル画像" width="1440" height="960" loading="lazy" decoding="async">
     </div>
   </div>
 
+  <!-- フッター -->
+  <footer class="p-footer">
+    <nav class="p-footer__nav">
+      <ul class="p-footer__nav-list">
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">ホーム</a>
+        </li>
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">お知らせ</a>
+        </li>
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">施工事例</a>
+        </li>
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">我々について</a>
+        </li>
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">採用情報</a>
+        </li>
+        <li class="p-footer__nav-item">
+          <a href="#" class="p-footer__nav-link">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <small class="p-footer__copyright">&copy;2024 CODO ASSIST</small>
+  </footer>
+
   <!-- JavaScript -->
+  <!-- swiper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+  <!-- メインスクリプト -->
   <script src="./js/script.js" defer></script>
 </body>
 </html>
