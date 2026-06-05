@@ -1,8 +1,7 @@
 @use "global" as *;
 
 .p-news__inner {
-  padding-left: rem(220);
-  padding-right: rem(220);
+  max-width: calc(rem(1000) + #{$padding-pc} * 2);
 }
 
 .p-news__wrapper {

@@ -12,6 +12,7 @@
 .swiper .swiper-slide {
   width: rem(904);
   overflow: hidden;
+  flex-shrink: 0;
   @include mq(md) {
     width: rem(243);
   }
