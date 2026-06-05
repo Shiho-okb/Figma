@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-news__inner {
+  padding-left: rem(220);
+  padding-right: rem(220);
+}
+
+.p-news__wrapper {
+  background-color: $gray;
+  padding: rem(40) rem(74);
+}
+
+.p-news__content {
+  display: grid;
+  grid-template-columns: rem(161) 1fr;
+  column-gap: rem(60);
+  align-items: start;
+}
+
+.p-news__title {
+  margin-top: rem(-10);
+}
+
+.p-news__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+}
+
+.p-news__btn {
+  width: rem(300);
+  margin: rem(30) auto 0;
+  @include mq(md) {
+    width: rem(240);
+  }
+}
+
+.p-news__btn .c-btn{
+  height: rem(60);
+  @include mq(md) {
+    height: rem(50);
+  }
+}

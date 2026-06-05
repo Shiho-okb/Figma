@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-news {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(-150);
+}

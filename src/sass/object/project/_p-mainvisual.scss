@@ -3,10 +3,8 @@
 .p-mainvisual {
   background: $black;
   overflow: hidden;
-  margin-top: rem(100);
   padding-block: rem(80) rem(230);
   @include mq(md) {
-    margin-top: 0;
     padding-block: rem(56) rem(161);
   }
 }
