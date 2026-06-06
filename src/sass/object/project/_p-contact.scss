@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-contact {
+  background-color: $gray;
+}
+
+.p-contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: rem(86) rem(100);
+  @include mq(md) {
+    padding-block: rem(60) rem(70);
+  }
+}
+
+.p-contact__title {
+  align-items: center;
+}
+
+.p-contact__title .c-title__en {
+  font-size: rem(70);
+}
+
+.p-contact__title .c-title__ja {
+  margin-left: 0;
+  margin-top: rem(17);
+}
+
+.p-contact__btn {
+  width: rem(300);
+  margin-top: rem(44);
+  @include mq(md) {
+    width: rem(240);
+  }
+}
+
+.p-contact__btn .c-btn {
+  height: rem(60);
+  @include mq(md) {
+    height: rem(50);
+  }
+}
