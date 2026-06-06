@@ -39,6 +39,9 @@
 
 .c-title--white .c-title__en {
   font-size: rem(70);
+  @include mq(md) {
+    font-size: rem(50);
+  }
 }
 
 .c-title--white .c-title__en::first-letter {

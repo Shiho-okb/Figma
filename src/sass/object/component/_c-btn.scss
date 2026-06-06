@@ -21,7 +21,16 @@
 }
 
 .c-btn:hover {
-  background-color: #f5f5f5;
+  color: $white;
+  background-color: $black;
+}
+
+.c-btn:hover span {
+  background-color: $white;
+}
+
+.c-btn:hover span::before {
+  border-left-color: $black;
 }
 
 .c-btn span {
