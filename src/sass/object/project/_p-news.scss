@@ -8,7 +8,7 @@
 }
 
 .p-news__wrapper {
-  background-color: $gray;
+  background-color: $white;
   padding: rem(40) rem(74);
   @include mq(md) {
     padding: rem(30) rem(20);
@@ -32,7 +32,7 @@
   }
 }
 
-.p-news__list {
+.p-news__cards {
   display: flex;
   flex-direction: column;
   gap: rem(10);

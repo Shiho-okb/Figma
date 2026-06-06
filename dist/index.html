@@ -112,9 +112,9 @@
               <span class="c-title__en">News</span>
               <span class="c-title__ja">お知らせ</span>
             </h2>
-            <ol class="p-news__list">
-              <li class="p-news__item">
-                <a href="#" class="p-news__card c-news-card">
+            <ol class="p-news__cards">
+              <li class="p-news__card c-news-card">
+                <a href="#" class="c-news-card__item">
                   <span class="c-news-card__category c-news-card__category--blog">
                     ブログ
                   </span>
@@ -126,8 +126,8 @@
                   </p>
                 </a>
               </li>
-              <li class="p-news__item">
-                <a href="#" class="p-news__card c-news-card">
+              <li class="p-news__card c-news-card">
+                <a href="#" class="c-news-card__item">
                   <span class="c-news-card__category c-news-card__category--recruit">
                     採用
                   </span>
@@ -139,8 +139,8 @@
                   </p>
                 </a>
               </li>
-              <li class="p-news__item">
-                <a href="#" class="p-news__card c-news-card">
+              <li class="p-news__card c-news-card">
+                <a href="#" class="c-news-card__item">
                   <span class="c-news-card__category c-news-card__category--news">
                     News
                   </span>
@@ -164,16 +164,108 @@
       </div>
     </section>
 
+    <!-- 施工事例 -->
+    <section class="p-works l-works">
+      <div class="p-works__inner l-inner">
+        <div class="p-works__wrapper">
+          <h2 class="p-works__title c-title">
+            <span class="c-title__en">Works</span>
+            <span class="c-title__ja">施工事例</span>
+          </h2>
+          <ul class="p-works-cards">
+            <!-- card1 -->
+            <li class="c-works-card">
+              <a href="#" class="c-works-card__item">
+                <div class="c-works-card__image">
+                  <img src="./images/works/works_01.webp" alt="スカイタワー新橋" width="317" height="195" loading="lazy" decoding="async">
+                </div>
+                <div class="c-works-card__body">
+                  <h3 class="c-works-card__title">
+                    スカイタワー新橋
+                  </h3>
+                  <p class="c-works-card__text">
+                    近年急速に都市機能の更新が進むビジネスエリア「新橋」で企画・設計・施工を手掛けた自社開発物件で、駅から徒歩9分の好立地に位置する高規格な賃貸オフィスビルです。
+                  </p>
+                  <div class="c-works-card__tags">
+                    <span class="c-works-card__tag c-works-card__tag--black c-works-card__tag--office">
+                      オフィスビル
+                    </span>
+                    <span class="c-works-card__tag c-works-card__tag--white">
+                      2025年
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- card2 -->
+            <li class="c-works-card">
+              <a href="#" class="c-works-card__item">
+                <div class="c-works-card__image">
+                  <img src="./images/works/works_02.webp" alt="梅田ビルスクエア" width="317" height="195" loading="lazy" decoding="async">
+                </div>
+                <div class="c-works-card__body">
+                  <h3 class="c-works-card__title">
+                    梅田ビルスクエア
+                  </h3>
+                  <p class="c-works-card__text">
+                    メインストリートに面して立地する、1階が店舗、2～13階が事務所となる賃貸床面積約3,230坪の賃貸オフィスビルであり、事業企画・設計・施工による自社
+                  </p>
+                  <div class="c-works-card__tags">
+                    <span class="c-works-card__tag c-works-card__tag--black c-works-card__tag--office">
+                      オフィスビル
+                    </span>
+                    <span class="c-works-card__tag c-works-card__tag--white">
+                      2025年
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- card3 -->
+            <li class="c-works-card">
+              <a href="#" class="c-works-card__item">
+                <div class="c-works-card__image">
+                  <img src="./images/works/works_03.webp" alt="栄市立院 本館北タワー" width="317" height="195" loading="lazy" decoding="async">
+                </div>
+                <div class="c-works-card__body">
+                  <h3 class="c-works-card__title">
+                    栄市立院 本館北タワー
+                  </h3>
+                  <p class="c-works-card__text">
+                    地域の精神科医療の中核を担う大規模病院（総461床）における増築建物である。対象である児童思春期病棟・外来棟は、中学生までの患者が対象であることから、
+                  </p>
+                  <div class="c-works-card__tags">
+                    <span class="c-works-card__tag c-works-card__tag--black">
+                      福祉施設
+                    </span>
+                    <span class="c-works-card__tag c-works-card__tag--white">
+                      2024年
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="p-works__btn">
+            <a href="#" class="c-btn">
+              MORE
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <div class="l-inner">
+  <!-- <div class="l-inner">
     <div class="test">
       <p class="p-test">サイトが表示されました!</p>
       <div class="p-test__img">
-        <img src="./images/dummy1.webp" alt="サンプル画像" width="1440" height="960" loading="lazy" decoding="async">
+        <img  src="./images/dummy1.webp" alt="サンプル画像" width="1440" height="960" loading="lazy" decoding="async">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- フッター -->
   <footer class="p-footer">
