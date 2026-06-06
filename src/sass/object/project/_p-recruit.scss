@@ -20,6 +20,7 @@
   height: rem(233);
   @include mq(md) {
     flex-direction: column;
+    height: auto;
   }
 }
 

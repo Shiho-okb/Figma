@@ -20,11 +20,17 @@
 
 .p-contact__title .c-title__en {
   font-size: rem(70);
+  @include mq(md) {
+    font-size: rem(50);
+  }
 }
 
 .p-contact__title .c-title__ja {
   margin-left: 0;
   margin-top: rem(17);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
 }
 
 .p-contact__btn {
@@ -32,6 +38,7 @@
   margin-top: rem(44);
   @include mq(md) {
     width: rem(240);
+    margin-top: rem(24);
   }
 }
 
