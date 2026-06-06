@@ -97,15 +97,23 @@
   padding: rem(6) rem(14);
 }
 
-// .p-works-cards {
-//   display: flex;
-//   gap: rem(23);
-//   padding-inline: rem(120);
-//   @include mq(md) {
-//     max-width: rem(600);
-//     gap: rem(30);
-//     flex-direction: column;
-//     padding-inline: 0;
-//     margin: 0 auto;
-//   }
-// }
+// 各セクションごとに記載
+.p-works-cards {
+  display: flex;
+  gap: rem(23);
+  padding-inline: rem(120);
+  @include mq(md) {
+    max-width: rem(600);
+    gap: rem(30);
+    flex-direction: column;
+    padding-inline: 0;
+    margin: 0 auto;
+  }
+}
+
+.p-works-cards .c-works-card {
+  width: rem(317);
+  @include mq(md) {
+    width: 100%;
+  }
+}
