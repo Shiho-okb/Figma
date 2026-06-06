@@ -31,3 +31,16 @@
     font-size: rem(12);
   }
 }
+
+// c-title--white
+.c-title--white {
+  color: $white;
+}
+
+.c-title--white .c-title__en {
+  font-size: rem(70);
+}
+
+.c-title--white .c-title__en::first-letter {
+  color: $white;
+}

@@ -49,10 +49,10 @@
 
 .p-works__btn {
   width: rem(300);
-  margin: rem(97) auto 0;
+  margin-top: rem(97);
   @include mq(md) {
     width: rem(240);
-    margin: rem(24) auto 0;
+    margin-top: rem(24);
   }
 }
 

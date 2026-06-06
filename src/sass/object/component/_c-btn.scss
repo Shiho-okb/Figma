@@ -60,14 +60,43 @@
 
 // 各セクションごとに記載
 .p-btn {
-  width: 100%;
+  width: rem(300);
+  @include mq(md) {
+    width: rem(240);
+  }
 }
 
 .p-btn .c-btn {
-  max-width: rem(300);
   height: rem(60);
   @include mq(md) {
-    max-width: rem(240);
     height: rem(50);
   }
+}
+
+//c-btn--white
+.c-btn--white {
+  border: rem(1) solid $white;
+  color: $white;
+  background-color: $red;
+}
+
+.c-btn--white span {
+  background-color: $white;
+}
+
+.c-btn--white span::before {
+  border-left: rem(5) solid $red;
+}
+
+.c-btn--white:hover {
+  color: $red;
+  background-color: $white;
+}
+
+.c-btn--white:hover span {
+  background-color: $red;
+}
+
+.c-btn--white:hover span::before {
+  border-left-color: $white;
 }
