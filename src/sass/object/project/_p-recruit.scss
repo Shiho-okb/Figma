@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.p-recruit {
+  background-color: $black;
+  padding-block: rem(86) rem(80);
+  @include mq(md) {
+    padding-block: rem(40);
+  }
+}
+
+.p-recruit__inner {
+  max-width: calc(rem(1000) + #{$padding-pc} * 2);
+  @include mq(md) {
+    max-width: rem(600);
+  }
+}
+
+.p-recruit__wrapper {
+  display: flex;
+  height: rem(233);
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.p-recruit__head {
+  width: 44.2%;
+  background-color: $red;
+  padding: rem(52) rem(114) 0 rem(78);
+  @include mq(md) {
+    width: 100%;
+    padding: rem(35) rem(25);
+  }
+}
+
+.p-recruit__title .c-title__ja{
+  margin-top: rem(16);
+}
+
+.p-recruit__content {
+  width: 55.8%;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    width: 100%;
+    padding: rem(35) rem(20);
+  }
+}
+
+.p-recruit__catch {
+  font-size: rem(26);
+  font-weight: 700;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-recruit .p-btn {
+  width: rem(300);
+  margin-top: rem(15);
+  @include mq(md) {
+    width: rem(240);
+  }
+}
+
+.p-recruit .c-btn {
+  height: rem(60);
+  @include mq(md) {
+    height: rem(50);
+  }
+}
