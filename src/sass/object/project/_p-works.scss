@@ -3,6 +3,9 @@
 .p-works {
   padding-block: rem(217) rem(78);
   background-color: $gray;
+  @include mq(md) {
+    padding-block: rem(238) rem(55);
+  }
 }
 
 .p-works__wrapper {
@@ -11,6 +14,9 @@
   flex-direction: column;
   align-items: center;
   padding: rem(82) rem(120) rem(50);
+  @include mq(md) {
+    padding: rem(50) rem(20);
+  }
 }
 
 .p-works__title {
@@ -30,12 +36,15 @@
     gap: rem(30);
     flex-direction: column;
     padding-inline: 0;
-    margin: 0 auto;
+    margin: rem(45) auto 0;
   }
 }
 
 .p-works-cards .c-works-card {
   width: rem(317);
+  @include mq(md) {
+    width: 100%;
+  }
 }
 
 .p-works__btn {
