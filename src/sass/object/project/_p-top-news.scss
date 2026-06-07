@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.p-news__inner {
+.p-top-news__inner {
   max-width: calc(rem(1000) + #{$padding-pc} * 2);
   @include mq(md) {
     max-width: rem(600);
   }
 }
 
-.p-news__wrapper {
+.p-top-news__wrapper {
   background-color: $white;
   padding: rem(40) rem(74);
   @include mq(md) {
@@ -15,7 +15,7 @@
   }
 }
 
-.p-news__content {
+.p-top-news__content {
   display: grid;
   grid-template-columns: rem(161) 1fr;
   column-gap: rem(60);
@@ -25,14 +25,14 @@
   }
 }
 
-.p-news__title {
+.p-top-news__title {
   margin-top: rem(-10);
   @include mq(md) {
     margin-bottom: rem(24);
   }
 }
 
-.p-news__cards {
+.p-top-news__cards {
   display: flex;
   flex-direction: column;
   gap: rem(10);
@@ -41,7 +41,7 @@
   }
 }
 
-.p-news__btn {
+.p-top-news__btn {
   width: rem(300);
   margin: rem(30) auto 0;
   @include mq(md) {
@@ -50,7 +50,7 @@
   }
 }
 
-.p-news__btn .c-btn{
+.p-top-news__btn .c-btn{
   height: rem(60);
   @include mq(md) {
     height: rem(50);
