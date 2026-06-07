@@ -44,10 +44,10 @@
     <nav class="p-header__nav js-drawer">
       <ul class="p-header__nav-list">
         <li class="p-header__nav-item">
-          <a href="#" class="p-header__nav-link p-header__nav-link--active">ホーム</a>
+          <a href="#" class="p-header__nav-link">ホーム</a>
         </li>
         <li class="p-header__nav-item">
-          <a href="#" class="p-header__nav-link">お知らせ</a>
+          <a href="#" class="p-header__nav-link p-header__nav-link--active">お知らせ</a>
         </li>
         <li class="p-header__nav-item">
           <a href="#" class="p-header__nav-link">施工事例</a>
@@ -78,22 +78,36 @@
         </div>
       </div>
     </div>
+    <!-- パンくずリスト -->
+    <div class="p-news-breadcrumb c-breadcrumb">
+      <div class="c-breadcrumb__inner l-inner">
+        <ol class="c-breadcrumb__list">
+          <li class="c-breadcrumb__item">
+            <a href="#">
+              TOP
+            </a>
+          </li>
+          <li class="c-breadcrumb__item">
+            お知らせ
+          </li>
+        </ol>
+      </div>
+    </div>
 
     <!-- お知らせ一覧 -->
     <div class="p-news">
       <div class="p-news__inner l-inner">
         <div class="p-news__wrapper">
-          <!-- category -->
+          <!-- カテゴリー -->
           <ul class="p-news__tabs">
-            <li class="is-active">すべて</li>
-            <li>News</li>
-            <li>採用</li>
-            <li>ブログ</li>
+            <li class="is-active"><a href="#">すべて</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">採用</a></li>
+            <li><a href="#">ブログ</a></li>
           </ul>
-          <!-- news list -->
-          <ol class="p-news__cards p-news-cards">
-            <!-- c-news-card -->
-            <li class="c-news-card">
+          <!-- お知らせリスト -->
+          <ol class="p-news__cards">
+            <li class="p-news__card c-news-card">
               <a href="#" class="c-news-card__item">
                 <span class="c-news-card__category c-news-card__category--blog">
                   ブログ
@@ -106,24 +120,135 @@
                 </p>
               </a>
             </li>
-            <!-- 以下カード追加 -->
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--recruit">
+                  採用
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-18">
+                  2025.12.18
+                </time>
+                <p class="c-news-card__title">
+                  2027年度採用エントリーについて
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--news">
+                  News
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-14">
+                  2025.12.14
+                </time>
+                <p class="c-news-card__title">
+                  TVCMが放映されます
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--news">
+                  News
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-14">
+                  2025.12.08
+                </time>
+                <p class="c-news-card__title">
+                  年末年始休暇は12月29日より1月3日までとなっています。
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--recruit">
+                  採用
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-18">
+                  2025.12.02
+                </time>
+                <p class="c-news-card__title">
+                  2025年度中途採用におけるお知らせ
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--news">
+                  News
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-14">
+                  2025.11.16
+                </time>
+                <p class="c-news-card__title">
+                  ここにタイトル入れるここにタイトル入れるここにタイトル入れるここにタイトル入れるここにタイトル入れる
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--news">
+                  News
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-14">
+                  2025.11.01
+                </time>
+                <p class="c-news-card__title">
+                  社長就任によるご挨拶
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--recruit">
+                  採用
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-18">
+                  2025.10.31
+                </time>
+                <p class="c-news-card__title">
+                  2025年度中途採用の情報を更新しました。
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--recruit">
+                  採用
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-18">
+                  2025.10.19
+                </time>
+                <p class="c-news-card__title">
+                  【2026年度新卒採用】四次募集を締め切りました。
+                </p>
+              </a>
+            </li>
+            <li class="p-news__card c-news-card">
+              <a href="#" class="c-news-card__item">
+                <span class="c-news-card__category c-news-card__category--news">
+                  News
+                </span>
+                <time class="c-news-card__date" datetime="2025-12-14">
+                  2025.10.01
+                </time>
+                <p class="c-news-card__title">
+                  Webサイトをリニューアルしました
+                </p>
+              </a>
+            </li>
           </ol>
-          <!-- pagination -->
-          <div class="p-news__pagination">
-            <a href="#" class="p-news__pagination-prev">
-              ＜
-            </a>
-            <a href="#" class="is-current">
-              1
-            </a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <span>…</span>
-            <a href="#">5</a>
-            <a href="#" class="p-news__pagination-next">
-              ＞
-            </a>
-          </div>
+        </div>
+        <!-- ページネーション -->
+        <div class="p-news__pagination">
+          <a href="#" class="p-news__pagination-prev"></a>
+          <a href="#" class="is-current">１</a>
+          <a href="#">２</a>
+          <a href="#">３</a>
+          <a href="#">４</a>
+          <span>…</span>
+          <a href="#">５</a>
+          <a href="#" class="p-news__pagination-next"></a>
         </div>
       </div>
     </div>

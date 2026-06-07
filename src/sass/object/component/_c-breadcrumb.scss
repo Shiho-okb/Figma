@@ -4,7 +4,6 @@
   background-color: $gray;
 }
 
-
 .c-breadcrumb__list {
   display: flex;
   align-items: center;
@@ -27,6 +26,10 @@
   @include mq(md) {
     padding: rem(15) rem(15) rem(15) 0;
   }
+}
+
+.c-breadcrumb__item a:hover {
+  color: $red;
 }
 
 .c-breadcrumb__item:not(:last-child) {

@@ -12,7 +12,7 @@
 }
 
 .c-page-header__inner {
-  max-width: calc(rem(1000) + #{$padding-pc} * 2);
+  max-width: calc(rem(1010) + #{$padding-pc} * 2);
   height: 100%;
   @include mq(md) {
     max-width: rem(600);
