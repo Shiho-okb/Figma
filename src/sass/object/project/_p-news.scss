@@ -3,6 +3,9 @@
 .p-news {
   background-color: $gray;
   padding-block: rem(33) rem(80);
+  @include mq(md) {
+    padding-block: rem(20) rem(50);
+  }
 }
 
 .p-news__wrapper {
@@ -18,21 +21,31 @@
   align-items: center;
   @include mq(md) {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 .p-news__tabs li {
   font-size: rem(14);
   font-weight: 700;
+  @include mq(md) {
+    font-size: rem(13);
+  }
 }
 
 .p-news__tabs a {
   display: inline-block;
   padding: rem(2) rem(20);
+  @include mq(md) {
+    padding: rem(5) rem(17);
+  }
 }
 
 .p-news__tabs li:first-child {
   padding-right: rem(20);
+  @include mq(md) {
+    padding-right: rem(17);
+  }
 }
 
 .p-news__tabs .is-active a {
@@ -44,6 +57,10 @@
   flex-direction: column;
   gap: rem(20);
   margin-top: rem(60);
+  @include mq(md) {
+    gap: rem(15);
+    margin-top: rem(35);
+  }
 }
 
 // ページネーション
@@ -52,6 +69,9 @@
   justify-content: center;
   align-items: center;
   margin-top: rem(76);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .p-news__pagination a,
@@ -60,12 +80,19 @@
   font-weight: 700;
   color: #6A6A6A;
   padding: rem(5) rem(9);
+  @include mq(md) {
+    font-size: rem(14);
+    padding: rem(4) rem(6);
+  }
 }
 
 .p-news__pagination .is-current {
   color: $red;
   text-decoration: underline;
   text-underline-offset: rem(4);
+  @include mq(md) {
+    text-underline-offset: rem(3);
+  }
 }
 
 .p-news__pagination a.p-news__pagination-prev,
@@ -77,14 +104,24 @@
   height: rem(30);
   background-color: $red;
   padding: 0;
+  @include mq(md) {
+    width: rem(24);
+    height: rem(24);
+  }
 }
 
 .p-news__pagination a.p-news__pagination-prev {
   margin-right: rem(34);
+  @include mq(md) {
+    margin-right: rem(15);
+  }
 }
 
 .p-news__pagination a.p-news__pagination-next {
   margin-left: rem(34);
+  @include mq(md) {
+    margin-left: rem(15);
+  }
 }
 
 .p-news__pagination-prev::before {
@@ -94,6 +131,10 @@
   background-image: url("../images/prev.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  @include mq(md) {
+    width: rem(6);
+    height: rem(10);
+  }
 }
 
 .p-news__pagination-next::before {
@@ -103,4 +144,8 @@
   background-image: url("../images/next.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  @include mq(md) {
+    width: rem(6);
+    height: rem(10);
+  }
 }

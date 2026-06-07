@@ -37,7 +37,7 @@
   flex-direction: column;
   gap: rem(10);
   @include mq(md) {
-    gap: rem(14);
+    gap: rem(15);
   }
 }
 
