@@ -1,82 +1,101 @@
 @use "global" as *;
 
 .p-news-post {
+  background-color: $gray;
+  padding-block: rem(46) rem(100);
+}
+
+.p-news-post__wrapper {
   background-color: $white;
-  padding: rem(55) rem(75);
+  padding: rem(67) rem(120) rem(80);
   @include mq(md) {
-    padding: rem(30) rem(20);
   }
 }
 
-// title
 .p-news-post__title {
-  font-size: rem(24);
+  font-size: rem(32);
   font-weight: 700;
-  padding-bottom: rem(15);
-  border-bottom: rem(1) solid #ccc;
+  padding-bottom: rem(20);
+  border-bottom: rem(1) solid $black;
   @include mq(md) {
-    font-size: rem(18);
   }
 }
 
 .p-news-post__meta {
   display: flex;
   align-items: center;
-  gap: rem(15);
-  margin-top: rem(12);
+  gap: rem(20);
+  margin-top: rem(20);
 }
 
-
-// image
 .p-news-post__image {
-  margin-top: rem(25);
-  img {
-    width: 100%;
-    height: auto;
-  }
+  width: rem(1000);
+  margin-top: rem(40);
 }
 
-// body
+.p-news-post__image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000 / 560;
+  object-fit: cover;
+}
+
 .p-news-post__body {
-  margin-top: rem(25);
-  font-size: rem(14);
-  line-height: calc(24 / 14);
-
-  p+p {
-    margin-top: rem(15);
-  }
-
-  h2 {
-    margin-top: rem(35);
-    font-size: rem(20);
-    font-weight: 700;
-  }
-
-  dl {
-    margin-top: rem(15);
-  }
-
-  dt {
-    font-weight: 700;
-  }
-
-  a {
-    color: #0066cc;
-    text-decoration: underline;
-  }
+  margin-top: rem(40);
 }
 
-// button
+ .p-news-post__body p {
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-news-post__body h3 {
+  margin-top: rem(28);
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: calc(36 / 28);
+}
+
+.p-news-post__body dl {
+  margin-top: rem(28);
+}
+
+.p-news-post__body dt,
+.p-news-post__body dd {
+  display: inline;
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-news-post__body dt {
+  font-weight: 700;
+  margin-left: rem(3);
+}
+
+.p-news-post__note {
+  margin-top: rem(16);
+}
+
+.p-news-post__body a {
+  display: inline-block;
+  color: $blue;
+  text-decoration: underline;
+  margin-top: rem(16);
+}
+
 .p-news-post__btn {
-  width: rem(200);
-  margin: rem(45) auto 0;
+  width: rem(300);
+  margin: rem(57) auto 0;
   @include mq(md) {
     width: rem(240);
   }
 }
 
 .p-news-post__btn .c-btn {
-  height: rem(45);
+  height: rem(60);
+  @include mq(md) {
+    height: rem(50);
+  }
 }
 
 // related
