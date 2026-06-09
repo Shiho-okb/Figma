@@ -193,11 +193,11 @@
 .p-news-post__cards {
   display: flex;
   gap: rem(25);
-  margin-top: rem(30);
+  margin: rem(30) auto 0;
   @include mq(md) {
     max-width: rem(600);
     gap: rem(35);
     flex-direction: column;
-    margin-top: rem(20);
+    margin: rem(20) auto 0;
   }
 }
