@@ -61,6 +61,7 @@
   gap: rem(13);
   margin-top: rem(16);
   @include mq(md) {
+    gap: rem(10);
     margin-top: rem(13);
   }
 }
@@ -75,12 +76,17 @@
   font-weight: 700;
   line-height: 1;
   @include mq(md) {
+    min-height: rem(26);
+    width: rem(72);
     font-size: rem(12);
   }
 }
 
 .c-works-card__tag--office {
   width: rem(100);
+  @include mq(md) {
+    width: rem(90);
+  }
 }
 
 .c-works-card__tag--black {
