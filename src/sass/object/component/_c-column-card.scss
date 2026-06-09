@@ -39,6 +39,8 @@
   color: $white;
   background-color: $red;
   @include mq(md) {
+    width: rem(70);
+    height: rem(26);
     font-size: rem(12);
   }
 }
@@ -49,6 +51,7 @@
   font-weight: 700;
   line-height: 1;
   @include mq(md) {
+    margin-left: rem(10);
     font-size: rem(14);
   }
 }
