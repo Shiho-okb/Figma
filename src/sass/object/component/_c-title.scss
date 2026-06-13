@@ -12,6 +12,7 @@
   line-height: 1;
   @include mq(md) {
     font-size: rem(40);
+    font-weight: 600;
   }
 }
 
