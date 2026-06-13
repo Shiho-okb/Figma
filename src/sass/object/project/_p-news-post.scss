@@ -79,7 +79,7 @@
   }
 }
 
-.p-news-post__body h3 {
+.p-news-post__body h2 {
   position: relative;
   font-size: rem(28);
   font-weight: 700;
@@ -94,7 +94,7 @@
   }
 }
 
-.p-news-post__body h3::before {
+.p-news-post__body h2::before {
   content: "";
   position: absolute;
   top: 50%;
