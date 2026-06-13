@@ -16,42 +16,6 @@
   }
 }
 
-.p-news__tabs {
-  display: flex;
-  align-items: center;
-  @include mq(md) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-.p-news__tabs li {
-  font-size: rem(14);
-  font-weight: 700;
-  @include mq(md) {
-    font-size: rem(13);
-  }
-}
-
-.p-news__tabs a {
-  display: inline-block;
-  padding: rem(2) rem(20);
-  @include mq(md) {
-    padding: rem(5) rem(17);
-  }
-}
-
-.p-news__tabs li:first-child {
-  padding-right: rem(20);
-  @include mq(md) {
-    padding-right: rem(17);
-  }
-}
-
-.p-news__tabs .is-active a {
-  background-color: #FFF1F1;
-}
-
 .p-news__cards {
   display: flex;
   flex-direction: column;
@@ -63,7 +27,6 @@
   }
 }
 
-// ページネーション
 .p-news__pagination {
   margin-top: rem(76);
   @include mq(md) {
