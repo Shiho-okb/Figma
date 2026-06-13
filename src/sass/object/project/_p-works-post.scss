@@ -39,11 +39,17 @@
 .p-works-post__tags {
   gap: rem(12);
   margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(13);
+  }
 }
 
 .p-works-post__tags .c-works-card__tag {
   min-height: rem(25);
   width: rem(80);
+  @include mq(md) {
+    width: rem(72);
+  }
 }
 
 .p-works-post__tags .c-works-card__tag--office {
@@ -60,6 +66,9 @@
 // メイン画像
 .p-works-post__slider {
   margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
 }
 
 .p-works-post__image {
@@ -71,15 +80,24 @@
   height: auto;
   aspect-ratio: 1000 / 560;
   object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 295 / 165;
+  }
 }
 
 // 矢印
 .p-works-post__arrow {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: rem(40);
   height: rem(40);
   background-color: $black;
+  margin-top: 0;
+  @include mq(md) {
+    width: rem(25);
+    height: rem(25);
+  }
 }
 
 // Swiper標準矢印を消す
@@ -126,6 +144,10 @@
   display: flex;
   gap: rem(20);
   margin-top: rem(20);
+  @include mq(md) {
+    gap: rem(10);
+    margin-top: rem(15);
+  }
 }
 
 .p-works-post__thumb {
@@ -133,13 +155,16 @@
   height: rem(132);
   cursor: pointer;
   @include mq(md) {
-    width: rem(80);
+    width: rem(66);
     height: rem(55);
   }
 }
 
 .p-works-post__thumb.swiper-slide-thumb-active {
   border: rem(4) solid $red;
+  @include mq(md) {
+    border: rem(2) solid $red;
+  }
 }
 
 .p-works-post__thumb img {
@@ -150,6 +175,9 @@
 
 .p-works-post__data {
   margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(35);
+  }
 }
 
 .p-works-post__data div {
@@ -167,6 +195,9 @@
   line-height: calc(65 / 18);
   @include mq(md) {
     width: auto;
+    font-size: rem(16);
+    line-height: 1.5;
+    padding-top: rem(15);
   }
 }
 
@@ -174,12 +205,22 @@
   flex: 1;
   font-size: rem(18);
   line-height: calc(65 / 18);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.7;
+    padding-bottom: rem(15);
+  }
 }
 
 .p-works-post__text {
   margin-top: rem(37);
   font-size: rem(16);
   line-height: calc(28 / 16);
+  @include mq(md) {
+    margin-top: rem(25);
+    font-size: rem(14);
+    line-height: calc(24 / 14);
+  }
 }
 
 .p-works-post__btn {
@@ -240,4 +281,8 @@
   font-weight: 700;
   line-height: calc(26 / 22);
   letter-spacing: .03em;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(22 / 16);
+  }
 }

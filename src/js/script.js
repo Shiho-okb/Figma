@@ -101,8 +101,15 @@ jQuery(function ($) {
   // サムネイル
   const worksThumbSwiper = new Swiper(".p-works-post__thumbs", {
     slidesPerView: "4",
-    spaceBetween: 20,
+    spaceBetween: 10,
     watchSlidesProgress: true,
+
+    // レスポンシブ設定
+    breakpoints: {
+      768: {
+        spaceBetween: 20,
+      },
+    },
   });
 
   // メイン
