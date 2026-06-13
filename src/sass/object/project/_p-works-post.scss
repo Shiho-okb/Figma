@@ -148,25 +148,23 @@
   object-fit: cover;
 }
 
-
-
-// 施工情報
 .p-works-post__data {
-  margin-top: rem(20);
+  margin-top: rem(50);
 }
 
 .p-works-post__data div {
   display: flex;
-  border-bottom: rem(1) solid #ddd;
-  padding-block: rem(10);
+  border-bottom: rem(1) solid rgba($black, 0.3);
   @include mq(md) {
     flex-direction: column;
   }
 }
 
 .p-works-post__data dt {
-  width: rem(120);
+  width: rem(227);
+  font-size: rem(18);
   font-weight: 700;
+  line-height: calc(65 / 18);
   @include mq(md) {
     width: auto;
   }
@@ -174,23 +172,19 @@
 
 .p-works-post__data dd {
   flex: 1;
+  font-size: rem(18);
+  line-height: calc(65 / 18);
 }
 
-// 本文
 .p-works-post__text {
-  margin-top: rem(25);
+  margin-top: rem(37);
+  font-size: rem(16);
+  line-height: calc(28 / 16);
 }
-
-.p-works-post__text p {
-  font-size: rem(14);
-  line-height: calc(26 / 14);
-  margin-top: rem(10);
-}
-
 
 .p-works-post__btn {
   width: rem(300);
-  margin: rem(57) auto 0;
+  margin: rem(50) auto 0;
   @include mq(md) {
     width: rem(240);
     margin: rem(40) auto 0;
@@ -228,4 +222,22 @@
     flex-direction: column;
     margin: rem(20) auto 0;
   }
+}
+
+.p-works-post__cards .c-works-card__tag--white {
+  width: rem(80);
+}
+
+.p-works-post__cards .c-works-card__tags {
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(13);
+  }
+}
+
+.p-works-post__cards .c-column-card__title {
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: calc(26 / 22);
+  letter-spacing: .03em;
 }
