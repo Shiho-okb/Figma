@@ -24,8 +24,15 @@
   @include mq(md) {
     grid-template-columns: 1fr;
     max-width: rem(400);
-    margin-inline: auto;
-    gap: rem(30);
+    margin: rem(35) auto 0;
+    gap: rem(35);
+  }
+}
+
+.p-works__cards .c-works-card {
+  width: rem(317);
+  @include mq(md) {
+    width: 100%;
   }
 }
 

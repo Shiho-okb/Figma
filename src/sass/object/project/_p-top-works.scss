@@ -32,10 +32,9 @@
   gap: rem(23);
   margin-top: rem(61);
   @include mq(md) {
-    max-width: rem(600);
-    gap: rem(35);
     flex-direction: column;
-    padding-inline: 0;
+    max-width: rem(400);
+    gap: rem(35);
     margin: rem(45) auto 0;
   }
 }
