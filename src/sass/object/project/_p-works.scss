@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-works {
+.p-top-works {
   padding-block: rem(217) rem(78);
   background-color: $gray;
   @include mq(md) {
@@ -8,7 +8,7 @@
   }
 }
 
-.p-works__wrapper {
+.p-top-works__wrapper {
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -19,15 +19,15 @@
   }
 }
 
-.p-works__title {
+.p-top-works__title {
   align-items: center;
 }
 
-.p-works__title .c-title__ja {
+.p-top-works__title .c-title__ja {
   margin-left: 0;
 }
 
-.p-works-cards {
+.p-top-works__cards {
   display: flex;
   gap: rem(23);
   margin-top: rem(61);
@@ -40,14 +40,14 @@
   }
 }
 
-.p-works-cards .c-works-card {
+.p-top-works__cards .c-works-card {
   width: rem(317);
   @include mq(md) {
     width: 100%;
   }
 }
 
-.p-works__btn {
+.p-top-works__btn {
   width: rem(300);
   margin-top: rem(97);
   @include mq(md) {
@@ -56,7 +56,7 @@
   }
 }
 
-.p-works__btn .c-btn {
+.p-top-works__btn .c-btn {
   height: rem(60);
   @include mq(md) {
     height: rem(50);
