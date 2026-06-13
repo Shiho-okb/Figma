@@ -94,4 +94,36 @@ jQuery(function ($) {
     },
   });
 
+
+  /*-------------------------------------------
+  施工事例詳細 スワイパー
+  -------------------------------------------*/
+  // サムネイル
+  const worksThumbSwiper = new Swiper(".p-works-post__thumbs", {
+    slidesPerView: "4",
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+  });
+
+  // メイン
+  const worksMainSwiper = new Swiper(".p-works-post__slider", {
+    loop: true,
+    effect: "fade", // ふわっと切替
+
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    speed: 800,
+
+    navigation: {
+      nextEl: ".p-works-post__arrow--next",
+      prevEl: ".p-works-post__arrow--prev",
+    },
+
+    thumbs: {
+      swiper: worksThumbSwiper,
+    },
+  });
+
 });
