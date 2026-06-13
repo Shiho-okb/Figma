@@ -1,64 +1,37 @@
 @use "global" as *;
 
-.p-top-works {
-  padding-block: rem(217) rem(78);
+.p-works {
   background-color: $gray;
+  padding-block: rem(35) rem(74);
   @include mq(md) {
-    padding-block: rem(238) rem(55);
+    padding-block: rem(20) rem(50);
   }
 }
 
-.p-top-works__wrapper {
+.p-works__wrapper {
   background-color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: rem(77) rem(120) rem(50);
+  padding: rem(89) rem(120) rem(82);
   @include mq(md) {
-    padding: rem(50) rem(20);
+    padding: rem(35) rem(20);
   }
 }
 
-.p-top-works__title {
-  align-items: center;
-}
-
-.p-top-works__title .c-title__ja {
-  margin-left: 0;
-}
-
-.p-top-works__cards {
-  display: flex;
-  gap: rem(23);
-  margin-top: rem(61);
+.p-works__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(50) rem(24);
+  margin-top: rem(60);
   @include mq(md) {
-    max-width: rem(600);
-    gap: rem(35);
-    flex-direction: column;
-    padding-inline: 0;
-    margin: rem(45) auto 0;
+    grid-template-columns: 1fr;
+    max-width: rem(400);
+    margin-inline: auto;
+    gap: rem(30);
   }
 }
 
-.p-top-works__cards .c-works-card {
-  width: rem(317);
+.p-works__pagination {
+  margin-top: rem(76);
   @include mq(md) {
-    width: 100%;
-  }
-}
-
-.p-top-works__btn {
-  width: rem(300);
-  margin-top: rem(97);
-  @include mq(md) {
-    width: rem(240);
     margin-top: rem(40);
-  }
-}
-
-.p-top-works__btn .c-btn {
-  height: rem(60);
-  @include mq(md) {
-    height: rem(50);
   }
 }

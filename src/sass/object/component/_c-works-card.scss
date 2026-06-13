@@ -50,7 +50,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
-  padding-right: rem(5);
   @include mq(md) {
     font-size: rem(14);
   }
@@ -59,7 +58,7 @@
 .c-works-card__tags {
   display: flex;
   gap: rem(13);
-  margin-top: rem(16);
+  margin-top: rem(15);
   @include mq(md) {
     gap: rem(10);
     margin-top: rem(13);
