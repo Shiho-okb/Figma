@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-works-header {
+  margin-top: rem(100);
+  background-image: url(../images/works/works_header.webp);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
